@@ -24,10 +24,10 @@ export default function Menu() {
                 <Offcanvas.Body>
                     <ul>
                         <li>
-                            <Link href="/feed">feed</Link>
+                            <Link href="/feed" onClick={() => setShow((show) => !show)}>feed</Link>
                         </li>
                         <li>
-                            <Link href="/create">create new</Link>
+                            <Link href="/create" onClick={() => setShow((show) => !show)}>create new</Link>
                         </li>
                         {/* <li>
                             <Link href="/preferences">preferences</Link>
