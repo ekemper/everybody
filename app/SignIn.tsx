@@ -8,9 +8,7 @@ export default function Menu() {
     // const handleShow = () => setShow(true);
 
     return (
-        <div className='container flex justify-center my-16'>
-            <Button>Log in</Button>
-        </div>
+       <></>
     )
 
 }

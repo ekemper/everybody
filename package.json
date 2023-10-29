@@ -13,12 +13,14 @@
     "@fortawesome/free-solid-svg-icons": "^6.4.2",
     "@fortawesome/react-fontawesome": "^0.2.0",
     "bootstrap": "^5.3.2",
+    "netlify-identity-widget": "^1.4.14",
     "next": "14.0.0",
     "react": "^18",
     "react-bootstrap": "^2.9.1",
     "react-dom": "^18"
   },
   "devDependencies": {
+    "@types/netlify-identity-widget": "^1.9.5",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
@@ -26,6 +28,7 @@
     "eslint": "^8",
     "eslint-config-next": "14.0.0",
     "postcss": "^8",
+    "react-router-dom": "^6.17.0",
     "tailwindcss": "^3",
     "typescript": "^5"
   }
