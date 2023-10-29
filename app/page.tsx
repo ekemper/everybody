@@ -49,6 +49,7 @@ export default function Home() {
           <Button onClick={handleAuth}>Log in</Button>
         </div>
       }
+      <pre>{netlifyAuth.user}</pre>
     </main>
   );
 }
