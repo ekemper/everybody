@@ -557,16 +557,7 @@ video {
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
 }
-.me-2 {
-  margin-inline-end: 0.5rem;
-}
-.mt-3 {
-  margin-top: 0.75rem;
-}
-.pe-3 {
-  padding-inline-end: 0.75rem;
-}
-
+/* 
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -579,15 +570,10 @@ video {
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
   }
-}
+} */
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  color: slateblue;
+  background: lightblue;
 }
 
