@@ -1,8 +1,7 @@
 'use client'
-{/* The following line can be included in your src/index.js or App.js file */ }
-import 'bootstrap/dist/css/bootstrap.min.css';
 
-import Menu from './Menu';
+
+
 // import SignIn from './SignIn';
 
 import React, { useState } from 'react';
@@ -26,13 +25,17 @@ export default function Home() {
 
   return (
     <main>
-      {!!netlifyIdentity.currentUser() && <Menu />}
-      {!netlifyIdentity.currentUser() &&
-        <div>
+
+
+      {/*   TODO: figure out the auth callbacks */ }
+      
+     
+      {/* {!netlifyIdentity.currentUser() &&
+        <div className=''>
           <Button onClick={handleAuth}>Log in</Button>
         </div>
-      }
-      <pre>{JSON.stringify(netlifyIdentity.currentUser())}</pre>
+      } */}
+      {/* <pre>{JSON.stringify(netlifyIdentity.currentUser())}</pre> */}
     </main >
   );
 }

@@ -1,8 +1,10 @@
+'use client'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import { faBars } from '@fortawesome/free-solid-svg-icons'
+import Link from 'next/link'
 
 export default function Menu() {
     const [show, setShow] = useState(false);
@@ -20,13 +22,22 @@ export default function Menu() {
                     <Offcanvas.Title>Offcanvas</Offcanvas.Title>
                 </Offcanvas.Header>
                 <Offcanvas.Body>
-                    Some text as placeholder. In real life you can have the elements you
-                    have chosen. Like, text, images, lists, etc.
+                    <ul>
+                        <li>
+                            <Link href="/feed">feed</Link>
+                        </li>
+                        <li>
+                            <Link href="/create">create new</Link>
+                        </li>
+                        {/* <li>
+                            <Link href="/preferences">preferences</Link>
+                        </li> */}
+                    </ul>
+
                 </Offcanvas.Body>
             </Offcanvas>
         </div>
     )
-
 }
 
 

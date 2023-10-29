@@ -1,6 +1,11 @@
+
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
+
+{/* The following line can be included in your src/index.js or App.js file */ }
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './globals.css'
+import Menu from './Menu'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -16,7 +21,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+      <Menu/>
+
+{/* {true || !!netlifyIdentity.currentUser() && <Menu />} */}
+        {children}
+      </body>
     </html>
   )
 }
