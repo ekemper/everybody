@@ -5,15 +5,18 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { useState } from 'react';
 import Menu from './Menu';
+import SignIn from './SignIn';
 // import Image from 'next/image'
 
-const isLoggedIn = () => { return true; };
+const isLoggedIn = () => { return false; };
 
 export default function Home() {
   
   return (
     <main>
       {isLoggedIn() && <Menu/>}
+      {!isLoggedIn() && <SignIn/>}
+      
     </main>
   );
 }
