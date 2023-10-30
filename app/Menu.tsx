@@ -20,7 +20,7 @@ export default function Menu() {
         return (
             <li className='p-6'>
                 <Link
-                    className='uppercase small'
+                    className='uppercase'
                     href={`/${path}`}
                     onClick={() => setShow((show) => !show)}>
                     {label}
@@ -29,14 +29,14 @@ export default function Menu() {
     }
 
     return (
-        <div className='p-4'>
+        <div className='pt-4 pr-4 pl-4'>
             <Button variant='outline-success' onClick={handleShow}>
                 <FontAwesomeIcon icon={faBars} />
             </Button>
 
             <Offcanvas show={show} onHide={handleClose}>
                 <Offcanvas.Header>
-                    <Offcanvas.Title>menu</Offcanvas.Title>
+                    <Offcanvas.Title className='uppercase'>menu</Offcanvas.Title>
                     <button  onClick={handleClose} aria-label="Close">
                         <FontAwesomeIcon className="h-8 w-8" icon={faXmark} />
                     </button>
@@ -44,7 +44,7 @@ export default function Menu() {
                 <Offcanvas.Body>
                     <ul>
                         <OffcanvasLI path='feed' label='feed' />
-                        <OffcanvasLI path="create" label='create new' />
+                        <OffcanvasLI path="create" label='create new post' />
                         {/* 
                             <Link href="/preferences">preferences</Link>
                          */}
