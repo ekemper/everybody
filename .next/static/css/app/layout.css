@@ -566,11 +566,48 @@ video {
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
 }
+.m-2 {
+  margin: 0.5rem;
+}
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
 .mb-3 {
   margin-bottom: 0.75rem;
 }
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+.ml-2 {
+  margin-left: 0.5rem;
+}
+.mr-2 {
+  margin-right: 0.5rem;
+}
+.mb-4 {
+  margin-bottom: 1rem;
+}
+.mt-0 {
+  margin-top: 0px;
+}
+.flex {
+  display: flex;
+}
+.max-w-md {
+  max-width: 28rem;
+}
+.justify-end {
+  justify-content: flex-end;
+}
 .p-4 {
   padding: 1rem;
+}
+.font-mono {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+.uppercase {
+  text-transform: uppercase;
 }
 
 body {

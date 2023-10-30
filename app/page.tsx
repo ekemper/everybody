@@ -24,7 +24,7 @@ export default function Home() {
   }
 
   return (
-    <main>
+    <main className=' font-mono '>
 
 
       {/*   TODO: figure out the auth callbacks */ }
