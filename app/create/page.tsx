@@ -47,7 +47,7 @@ const CreatePost: FC = () => {
 
     return (
         <div className='p-4 max-w-md mx-auto'>
-            <h1 className='flex justify-end mb-4 mr-2 ml-2'>Create A New Post</h1>
+            <h1 className='flex justify-end mb-4 mr-2 ml-2 text-2xl'>Create A New Post</h1>
 
             <InputContainer labelText={'Your Feelings'}>
                 <textarea className="form-control" id="exampleFormControlTextarea1">
