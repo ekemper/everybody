@@ -25,11 +25,7 @@ const InputContainer: FC<InputContainerProps> = ({ labelText, children }) => {
 }
 
 const CreatePost: FC = () => {
-    // const [show, setShow] = useState(false);
-    // const handleClose = () => setShow(false);
-    // const handleShow = () => setShow(true);
-
-    const newPost: Post = {
+    const newPostTemplate: Post = {
         userId: '', // TODO: create context for user
         datetime: Date.now().toString(),
         feelings: '',
@@ -42,6 +38,12 @@ const CreatePost: FC = () => {
         difficulty: DifficultyRating.RELAXED,
         doorOpen: false,
     };
+    const [newPost, setNewPost] = useState(newPostTemplate);
+   
+    const handleSelectChange = (event: any) => {
+        const target = event.target
+        debugger
+    }
 
     return (
         <div className='p-4 max-w-md mx-auto'>
@@ -72,7 +74,7 @@ const CreatePost: FC = () => {
             </InputContainer>
 
             <InputContainer labelText={'Volume'}>
-                <select className="form-select mb-3" aria-label="Volume Select">
+                <select id='volume' className="form-select mb-3" aria-label="Volume Select" onChange={handleSelectChange}>
                     <option value="5">{VolumeRating.ENORMOUS}</option>
                     <option value="4">{VolumeRating.LARGE}</option>
                     <option value="3" selected>{VolumeRating.MEDIUM}</option>
@@ -82,7 +84,7 @@ const CreatePost: FC = () => {
             </InputContainer>
 
             <InputContainer labelText={'Difficulty'}>
-                <select className="form-select mb-3" aria-label="Difficulty Select">
+                <select id='difficulty' className="form-select mb-3" aria-label="Difficulty Select" onChange={handleSelectChange}>
                     <option value="5">{DifficultyRating.EXPLOSIVE}</option>
                     <option value="4">{DifficultyRating.EAGER}</option>
                     <option value="3" selected>{DifficultyRating.RELAXED}</option>
@@ -92,7 +94,7 @@ const CreatePost: FC = () => {
             </InputContainer>
 
             <InputContainer labelText={'Consistency'}>
-                <select className="form-select mb-3" aria-label="Consistency Select">
+                <select id='consistency' className="form-select mb-3" aria-label="Consistency Select" onChange={handleSelectChange}>
                     <option value="5">{DifficultyRating.EXPLOSIVE}</option>
                     <option value="4">{DifficultyRating.EAGER}</option>
                     <option value="3" selected>{DifficultyRating.RELAXED}</option>
